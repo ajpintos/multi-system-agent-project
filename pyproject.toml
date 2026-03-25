@@ -1,0 +1,28 @@
+[project]
+name = "multi-system-agent-project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "chromadb>=1.5.5",
+    "faiss-cpu>=1.13.2",
+    "ipykernel>=7.2.0",
+    "langchain>=1.2.13",
+    "langgraph>=1.1.3",
+    "matplotlib>=3.10.8",
+    "numpy>=2.4.3",
+    "pydantic>=2.12.5",
+    "python-dotenv>=1.2.2",
+    "scikit-learn>=1.8.0",
+    "seaborn>=0.13.2",
+    "tavily-python>=0.7.23",
+    "tiktoken>=0.12.0",
+]
+
+[dependency-groups]
+dev = [
+    "autopep8>=2.3.2",
+    "isort>=8.0.1",
+    "ruff>=0.15.7",
+]
