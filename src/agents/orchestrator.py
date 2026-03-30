@@ -37,7 +37,7 @@ def build_orchestrator_chain(llm: ChatOpenAI):
         Runnable que acepta {"query": str} y retorna un dict con
         claves 'departamento' y 'razon'.
     """
-    system_prompt = (Path(__file__).parent.parent / "Orquestador.md").read_text(encoding="utf-8")
+    system_prompt = (Path(__file__).parent.parent / "Orquestador.md").read_text(encoding="utf-8").replace("{", "{{").replace("}", "}}")
 
     prompt = ChatPromptTemplate.from_messages(
         [

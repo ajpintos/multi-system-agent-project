@@ -1,8 +1,12 @@
 
 from dotenv import load_dotenv
+from openai import OpenAI
 from .logger_configuration import logger
 
-def call_api(system_prompt, 
+load_dotenv()
+client = OpenAI()
+
+def call_api(system_prompt,
              user_prompt, temp=0.2, 
              json_mode=False):
     try:
