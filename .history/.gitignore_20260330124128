@@ -302,4 +302,3 @@ dvc.lock.local
 *.mako*.env copy
 .env copy
 doc.md
-.env_example

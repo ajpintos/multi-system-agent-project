@@ -301,5 +301,3 @@ dvc.lock.local
 *.ini
 *.mako*.env copy
 .env copy
-doc.md
-.env_example
